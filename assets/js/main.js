@@ -53,8 +53,8 @@
       url: "../../assets/" + item,
       async: true,
       success: function() {
-        console.log("Loaded " + item)
-        NProgress.set(assets_len / i);
+        console.log("Loaded " + item + "(" + i / (assets_len)*100 + "%)")
+        NProgress.set(assets_len);
         //资源加载完毕
         if (i++ === assets_len) {
           console.log("Done!");
