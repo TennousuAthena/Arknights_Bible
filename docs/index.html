@@ -1,67 +1,48 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-  <head>
-    <meta charset="utf-8" />
-    <title>Rhodes Island - Arknights</title>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta
-      name="description"
-      content="罗德岛制药公司作为感染者问题专家，聘用感染者，深入危险地区，通过种种手段，已经成功解决了数起感染者引发的事件。而今，他们将面对史无前例的感染者暴乱。在各个势力间游走，发掘不为人知的内幕，抵挡感染者的疯狂进攻，你的决策将决定罗德岛的方向。"
-    />
-    <meta
-      name="keywords"
-      content="骡的岛, 罗德岛, 明日方舟, 二次元, 阿米娅到底是兔子还是驴, "
-    />
-    <meta content="user-scalable=0" name="viewport" />
-    <meta name="theme-color" content="#515A5A" />
-    <link rel="shortcut icon" href="https://file-cdn.qmcmc.cn/assets/open/rhodes-island.co/favicon.ico" />
-    <link rel="stylesheet" href="https://file-cdn.qmcmc.cn/assets/open/rhodes-island.co/assets/css/main.css" />
-  </head>
+    
+    <head>
+        <meta charset="utf-8" />
+        <title>圣经 - 两面包夹芝士 - Arknights - Rhodes Island</title>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="description" content="罗德岛制药公司作为感染者问题专家，聘用感染者，深入危险地区，通过种种手段，已经成功解决了数起感染者引发的事件。而今，他们将面对史无前例的感染者暴乱。在各个势力间游走，发掘不为人知的内幕，抵挡感染者的疯狂进攻，你的决策将决定罗德岛的方向。" />
+        <meta name="keywords" content="两面包夹芝士, 白开水没味怎么办, 我们联合, 核废水, 太弱小了没有力量, 骡的岛, 罗德岛, 明日方舟, 二次元, 阿米娅到底是兔子还是驴, " />
+        <meta content="user-scalable=0" name="viewport" />
+        <meta name="theme-color" content="#515A5A" />
 
-  <body>
-    <div id="content">
-      <div class="background"></div>
-      <div class="spinner" id="loading">
-        <div class="double-bounce1"></div>
-        <div class="double-bounce2"></div>
-      </div>
+        <link rel="preconnect" href="https://gstatic.loli.net">
+        <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
-      <!-- <div class="progress">
-        <div class="progress-bar-mask"></div>
-        <div class="progress-bar"></div> 
-        <div class="progress-num"></div>
-      </div> -->
-      <!-- <div id="square" style="position: fixed;left: 50%;top: 85%;"></div> -->
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link href="https://fonts.loli.net/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/nprogress.css" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    
+    <body>
+        <div id="content">
+          <video id="player"></video>
+            <div class="background"></div>
+            
+            <div class="spinner" id="loading">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+            <div class="hidden world_tip">
+                <p id="word">矿石病</p>
+                <p id="detail">目前发现长期接触源右及其工业衍生品，会使人更容易得二种被称、“矿石病”的不治之症。患上矿石病的人被称为“感染者”。矿石病会以一种危险的形式增强人的法术使用能力，但是却会在患者使用法术的过程中不断扩大感石疒石病染范围最终夺走感染者的生命并以其作为新的感染源。有关该病症经有多方面的长期研究，然而并没有太多有效成果。</p>
+            </div>
+            <div class="audio">
+                <iframe src="assets/audio/silence.mp3" allow="autoplay" id="audio"></iframe>
+                <audio id="bgm-intro" src="assets/audio/title_intro.mp3" preload="auto"></audio>
+                <audio id="bgm-loop" src="assets/audio/title_loop.mp3" preload="auto" loop></audio>
+            </div>
+        </div>
+        <script src="assets/js/nprogress.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/flv.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
 
-      <div class="world_tip">
-        <p id="word">矿石病</p>
-        <p id="detail">
-          目前发现长期接触源右及其工业衍生品，会使人更容易得二种被称、“矿石病”的不治之症。患上矿石病的人被称为“感染者”。矿石病会以一种危险的形式增强人的法术使用能力，但是却会在患者使用法术的过程中不断扩大感石疒石病染范围最终夺走感染者的生命并以其作为新的感染源。有关该病症经有多方面的长期研究，然而并没有太多有效成果。
-        </p>
-      </div>
-
-      <div class="audio">
-        <iframe
-          src="https://vid.qmcmc.cn/assets/open/rhodes-island.co/assets/audio/silence.mp3"
-          allow="autoplay"
-          id="audio"
-        ></iframe>
-        <audio
-          id="bgm-intro"
-          src="https://vid.qmcmc.cn/assets/open/rhodes-island.co/assets/audio/title_intro.mp3"
-          autoplay
-        ></audio>
-        <audio
-          id="bgm-loop"
-          src="https://vid.qmcmc.cn/assets/open/rhodes-island.co/assets/audio/title_loop.mp3"
-          preload="auto"
-          loop
-        ></audio>
-      </div>
-    </div>
-
-    <script src="https://file-cdn.qmcmc.cn/assets/js/jquery.min.js"></script>
-    <script src="https://file-cdn.qmcmc.cn/assets/open/rhodes-island.co/assets/js/main.js"></script>
-  </body>
 </html>

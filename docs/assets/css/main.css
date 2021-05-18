@@ -5,6 +5,9 @@ body {
   -khtml-user-select: none;
   user-select: none;
 }
+p {
+  font-family: sans-serif, Helvetica, Tahoma, 'Open Sans', Arial, STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑", SimSun, "宋体";
+}
 body {
   background-color: black;
 }
@@ -109,7 +112,6 @@ body {
 } */
 
 .world_tip {
-  display: none;
   color: #ececec;
   position: fixed;
   bottom: 12.5%;
@@ -138,4 +140,14 @@ body {
   height: 0;
   border: 25px solid transparent;
   border-top-color: yellow;
+}
+
+.hidden{
+  display: none;
+}
+
+#player{
+  display: none;
+  height: 100%;
+  width: 100%;
 }
