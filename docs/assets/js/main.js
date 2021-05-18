@@ -79,8 +79,8 @@
               $(".world_tip").fadeOut();
               $(".background").fadeOut();
               videoPlay();
-              $('#bgm-intro').animate({volume: 0.1}, 1500);
-              $('#bgm-loop').animate({volume: 0.1}, 1500);
+              $('#bgm-intro').animate({volume: 0.01}, 1500);
+              $('#bgm-loop').animate({volume: 0.01}, 1500);
             }, 2500);
           }, 5000);
         }
