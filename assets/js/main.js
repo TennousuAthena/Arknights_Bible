@@ -43,7 +43,7 @@
     // "image/worldtip3.png",
     // "image/worldtip5.png",
 
-    "media/无能狂怒.flv"
+    // "media/无能狂怒.flv"
   ];
   
   let assets_len = assets.length;
@@ -59,7 +59,6 @@
         if (i++ === assets_len) {
           console.log("Done!");
           NProgress.done();
-          $("#bgm-intro")[0].play();
           setTimeout(function() {
             setTimeout(function() {
               $(".background").fadeOut();
