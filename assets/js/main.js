@@ -54,7 +54,7 @@
   let base = $("base").attr("href");
   assets.forEach(function(item) {
     $.ajax({
-      url: base + "../../assets/" + item,
+      url: base + "/assets/" + item,
       async: true,
       success: function() {
         console.log("Loaded " + item + "(" + (i / assets_len)*100 + "%)")
